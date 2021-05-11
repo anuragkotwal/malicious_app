@@ -5,7 +5,7 @@ import 'package:device_apps/device_apps.dart';
 void main() {
   runApp(MyApp());
 }
-
+  
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,7 @@ showAlertDialog(BuildContext context) {
   );
   AlertDialog alert = AlertDialog(
     content:
-        Text("Unable to open app or the benign app is install on your device"),
+        Text("Unable to open app or the benign app is not install on your device"),
     actions: [
       okButton,
     ],
