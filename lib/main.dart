@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Container(
         child: Center(
-          child: RaisedButton(
+          child: ElevatedButton(
             child: Text(
               "Attack on app",
               style: TextStyle(
@@ -47,9 +47,7 @@ class _HomePageState extends State<HomePage> {
                 _openApp();
               else
                 showAlertDialog(context);
-              //_openLinkInGoogleChrome();
             },
-            color: Colors.blueAccent,
           ),
         ),
       ),
@@ -58,8 +56,8 @@ class _HomePageState extends State<HomePage> {
 }
 
 showAlertDialog(BuildContext context) {
-  Widget okButton = FlatButton(
-    child: Text("OK"),
+  Widget okButton = TextButton(
+    child: Text("Ok"),
     onPressed: () {
       Navigator.of(context).pop();
     },
